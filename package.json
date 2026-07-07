@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "fetch:data": "node scripts/fetch-catalog-samples.mjs",
+    "dev": "vite --host 127.0.0.1 --port 4177",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4177"
+  },
+  "dependencies": {
+    "@vitejs/plugin-basic-ssl": "^2.1.0",
+    "astronomy-engine": "^2.1.19",
+    "three": "^0.178.0",
+    "vite": "^7.0.0"
+  }
+}
