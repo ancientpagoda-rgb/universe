@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universe Live Desktop</title>
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="universe"></canvas>
+      <section class="hud" aria-label="Universe controls">
+        <div class="hud__title">
+          <span>Live Universe Desktop</span>
+          <small>real catalog points, no filaments</small>
+        </div>
+        <div class="controls" id="dataset-controls"></div>
+        <div class="scale">
+          <button id="scale-toggle" type="button">log radius</button>
+          <button id="auto-toggle" type="button">auto rotate</button>
+        </div>
+        <dl id="stats"></dl>
+        <section class="local-reference" aria-label="Local reference">
+          <div class="local-reference__title">Local reference</div>
+          <div class="local-reference__origin">
+            <span></span>
+            <strong>Solar System + Milky Way</strong>
+          </div>
+          <div class="local-stack">
+            <div><strong>Sun</strong><span>orbit center</span></div>
+            <div><strong>Earth</strong><span>surface globe + Moon</span></div>
+            <div><strong>Solar System</strong><span>inside Sun marker</span></div>
+            <div><strong>Milky Way</strong><span>compressed disk</span></div>
+            <div><strong>Local Group</strong><span>~10M ly wide</span></div>
+            <div><strong>Catalogs</strong><span>sphere around us</span></div>
+          </div>
+        </section>
+      </section>
+      <section class="legend" aria-label="Depth legend">
+        <span>near</span>
+        <div></div>
+        <span>far</span>
+      </section>
+      <section class="inspector" id="point-inspector" aria-live="polite" hidden></section>
+      <div class="origin-label" id="origin-label">
+        <strong>Solar System + Milky Way</strong>
+        <span>nested in the Sun marker</span>
+      </div>
+      <div class="point-label" id="point-label" hidden></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
